@@ -1,11 +1,11 @@
 'use strict';
  
-const CACHE_NAME = 'jc-cache-v1';
+const CACHE_NAME = 'jc-cache-v1.1';
 const urlsToCache = [
   './',
   './assets/css/main.css',
   './assets/js/main.js',
-  './assets/images/jc-logo.png'
+  './assets/images/jc-logo-512.png'
 ];
 
 self.addEventListener('install', function(event) {
