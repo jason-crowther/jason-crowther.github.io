@@ -1,6 +1,6 @@
 'use strict';
  
-const CACHE_NAME = 'jc-cache-v1.1';
+const CACHE_NAME = 'jc-cache-v1';
 const urlsToCache = [
   './',
   './assets/css/main.css',
