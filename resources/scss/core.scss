@@ -1,0 +1,10 @@
+$green:#a8e637;
+$grey:#4c5a66;
+$darkGrey:darken($grey, 10%);
+$darkGreen:darken($green, 10%);
+$white:#fff;
+//$primary-font: 'ambleregular' , Helvetica , Arial , sans-serif;
+
+body{
+    background-color:$grey;
+}

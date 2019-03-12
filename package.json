@@ -1,0 +1,26 @@
+{
+  "name": "jason-crowther.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "node-sass --source-map=true --output-style compressed --include-path scss resources/scss/main.scss assets/css/main.css",
+    "build-js": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jason-crowther/jason-crowther.github.io.git"
+  },
+  "author": "Jason Crowther",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jason-crowther/jason-crowther.github.io/issues"
+  },
+  "homepage": "https://github.com/jason-crowther/jason-crowther.github.io#readme",
+  "devDependencies": {
+    "bootstrap": "^4.3.1",
+    "node-sass": "^4.11.0",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3"
+  }
+}

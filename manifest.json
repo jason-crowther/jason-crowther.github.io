@@ -1,0 +1,22 @@
+{
+    "short_name": "Jason Crowther",
+    "name": "Jason Crowther",
+    "icons": [
+      {
+        "src": "/assets/images/logo-192.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "/assets/images/logo-512.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ],
+    "start_url": "/",
+    "background_color": "#4c5a66",
+    "display": "standalone",
+    "orientation": "portrait",
+    "scope": "/",
+    "theme_color": "#a8e637"
+  }
