@@ -1,10 +1,32 @@
-$green:#a8e637;
-$grey:#4c5a66;
-$darkGrey:darken($grey, 10%);
-$darkGreen:darken($green, 10%);
-$white:#fff;
-//$primary-font: 'ambleregular' , Helvetica , Arial , sans-serif;
-
-body{
-    background-color:$grey;
+header{
+    background-image: url("../images/main-bg.jpg");
+    background-image: -moz-linear-gradient(top, rgba(54,64,73,0.6) 30%, rgba(76,90,102,0.9) 100%), url("../images/main-bg.jpg");
+    background-image: -webkit-linear-gradient(top, rgba(54,64,73,0.6) 30%,rgba(76,90,102,0.9) 100%), url("../images/main-bg.jpg");
+    background-image: linear-gradient(to bottom, rgba(54,64,73,0.6) 30%,rgba(76,90,102,0.9) 100%), url("../images/main-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    
+    h1{
+        .one{
+            font-weight: 200;
+            color: $green;
+            font-size:1.5rem;
+            display:block;
+        }
+        .two{
+            font-weight: 800;
+            font-style:italic;
+            color: $white;
+            font-size:4rem;
+            display:block;
+        }
+        .three{
+            font-weight: 700;
+            color: $darkGreen;
+            font-size:2.3rem;
+            display:block;
+        }
+        
+    }
 }
