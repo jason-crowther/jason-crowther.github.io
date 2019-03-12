@@ -3,12 +3,12 @@
     "name": "Jason Crowther",
     "icons": [
       {
-        "src": "/assets/images/logo-192.png",
+        "src": "/assets/images/jc-logo.png",
         "type": "image/png",
         "sizes": "192x192"
       },
       {
-        "src": "/assets/images/logo-512.png",
+        "src": "/assets/images/jc-logo.png",
         "type": "image/png",
         "sizes": "512x512"
       }
