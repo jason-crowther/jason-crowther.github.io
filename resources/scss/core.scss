@@ -52,11 +52,54 @@ h2{
     font-weight: 700;
 }
 
+a:not(.btn){
+    color:$green;
+    text-decoration:underline;
+    &:hover{
+        color:$white;
+        svg{
+            fill:$white;
+        }
+    }
+    svg{
+        margin-right: 5px;
+        fill:$green;
+    }
+}
+
+.btn{
+    svg{
+        margin-left: 5px;
+        fill: $grey;
+    }
+    &.btn-success{
+        color:$grey;
+    }
+}
+
+.bg-grey{
+    background-color:$grey;
+}
+
+.bg-dark-grey{
+    background-color:$darkGrey;
+}
+
+.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+
+    > .col,
+    > [class*="col-"] {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
 .project{
     text-align:center;
     position:relative;
     cursor: pointer;
-
     .project-content{
         transition: all ease 0.3s;
         position:absolute;
@@ -103,26 +146,6 @@ h2{
 footer{
     background-color:$darkGrey;
 }
-
-.bg-grey{
-    background-color:$grey;
-}
-
-.bg-dark-grey{
-    background-color:$darkGrey;
-}
-
-.no-gutters {
-    margin-right: 0;
-    margin-left: 0;
-
-    > .col,
-    > [class*="col-"] {
-        padding-right: 0;
-        padding-left: 0;
-    }
-}
-
 
 @media (max-width:767px){
     header{
