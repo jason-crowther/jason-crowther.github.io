@@ -18,7 +18,11 @@
   },
   "homepage": "https://github.com/jason-crowther/jason-crowther.github.io#readme",
   "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
     "animate.css": "^3.7.0",
+    "babel-loader": "^8.0.5",
     "bootstrap": "^4.3.1",
     "node-sass": "^4.11.0",
     "particles.js": "^2.0.0",
