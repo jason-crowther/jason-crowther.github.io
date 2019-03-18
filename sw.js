@@ -1,11 +1,21 @@
 'use strict';
  
-const CACHE_NAME = 'jc-cache-v1';
+const CACHE_NAME = 'jc-cache-v1.1';
 const urlsToCache = [
   './',
   './assets/css/main.css',
   './assets/js/main.js',
-  './assets/images/jc-logo-512.png'
+  './assets/images/jc-logo.svg',
+  './assets/images/linkedin.svg',
+  './assets/images/arrow.svg',
+  './assets/images/portfolio/ace.png',
+  './assets/images/portfolio/avenue-halls.png',
+  './assets/images/portfolio/ie-divorce.png',
+  './assets/images/portfolio/kct.png',
+  './assets/images/portfolio/let-us-talk.png',
+  './assets/images/portfolio/make-up-issue.png',
+  './assets/images/portfolio/tegan-smith-photo.png',
+  './assets/images/portfolio/the-hiking-chronicles.png'
 ];
 
 self.addEventListener('install', function(event) {

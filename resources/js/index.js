@@ -1,6 +1,6 @@
+import "particles.js";
 import projects from "./modules/projects";
 import contact from "./modules/contact";
-import "particles.js";
 
 particlesJS.load('particles-js', './particlesjs-config.json');
 

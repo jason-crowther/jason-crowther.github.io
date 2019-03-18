@@ -1,11 +1,11 @@
 export default function contact() {
     "use strict";
 
-    let contactForm = document.getElementById("contactForm"),
-        inputsArr = contactForm.querySelectorAll('input');
+    const contactForm = document.getElementById("contactForm");
+    let inputsArr = contactForm.querySelectorAll('input');
+    let errorMessage = document.querySelector("#formError p");
 
-
-    var validations = {
+    let validations = {
         required: function(value){
             return value !== '';
         },
@@ -16,34 +16,35 @@ export default function contact() {
             return value.match(/^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/);
         }
     };
-    function validate() {
-            let errorMessage = document.querySelector("#formError p");
+
+    let validate = function() {
 
         contactForm.addEventListener('submit', function(e){
-            var i = 0;
+            let i = 0;
             while (i < inputsArr.length) {
-                var attr = inputsArr[i].getAttribute('data-validation'),
-                    rules = attr ? attr.split(' ') : '',
-                    j = 0;
+                let attr = inputsArr[i].getAttribute('data-validation');
+                let rules = attr ? attr.split(' ') : '';
+                let x = 0;
                 console.log(rules);
-                while (j < rules.length) {
-                    if(!validations[rules[j]](inputsArr[i].value)) {
+                while (x < rules.length) {
+                    if(!validations[rules[x]](inputsArr[i].value)) {
                         e.preventDefault();
 
                         errorMessage.parentElement.classList.remove("d-none");
-                        errorMessage.innerHTML = "Invalid rule '" + rules[j] + "' for input '" + inputsArr[i].name + "'";
+                        errorMessage.innerHTML = `Field ${inputsArr[i].name} is invalid.`;
                         inputsArr[i].classList.add("border-danger");
                         return false;
                     }
                     errorMessage.parentElement.classList.add("d-none");
                     inputsArr[i].classList.remove("border-danger");
-                    j++;
+                    x++;
                 }
                 i++;
             }
-
+            contactForm.action = "https://formspree.io/jasonpcrowther@gmail.com";
         }, false)
-    }
+    };
+
     validate();
 
 }

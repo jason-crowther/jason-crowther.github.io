@@ -2,7 +2,7 @@ export default function projects(){
     "use strict";
 
     //Array of Projects for the modal
-    let projectsArray = [
+    const projectsArray = [
         {
             "id": "project_01",
             "title": "The Hiking Chronicles",
@@ -20,7 +20,7 @@ export default function projects(){
         {
             "id": "project_03",
             "title": "Let Us Talk",
-            "description": "Let Us Talk is a platform for Registered Counsellor Natasha Potter. I was tasked with loogo design and website development on Wordpress.",
+            "description": "Let Us Talk is a platform for Registered Counsellor Natasha Potter. I was tasked with logo design and website development on Wordpress.",
             "image": "./assets/images/portfolio/let-us-talk.png",
             "link": "https://www.letustalk.co.za",
         },
@@ -41,37 +41,30 @@ export default function projects(){
         {
             "id": "project_06",
             "title": "Air Compressor Engineering (ACE)",
-            "description": "Air Compressor Company",
+            "description": "Air Compressor Engineering (ACE) is an air compressor company. I was tasked with a website re-design which was developed on Wordpress.",
             "image": "./assets/images/portfolio/ace.png",
             "link": "https://ace.co.za",
         },
         {
             "id": "project_07",
             "title": "Tegan Smith Photography",
-            "description": "Photographer",
+            "description": "Tegan Smith is a professional Fashion/ Blogger Photographer. I was tasked with creating a portfolio website on Wordpress.",
             "image": "./assets/images/portfolio/tegan-smith-photo.png",
             "link": "https://www.tegansmithphotography.com",
         },
         {
             "id": "project_08",
             "title": "The Make-up Issue",
-            "description": "Make-up College",
+            "description": "The Make-up Issues is a make-up college, I was tasked with creating their website on Wordpress.",
             "image": "./assets/images/portfolio/make-up-issue.png",
             "link": "https://www.themakeupissue.com",
-        },
-        {
-            "id": "project_09",
-            "title": "SD Law",
-            "description": "Attorney at Law",
-            "image": "./assets/images/portfolio/sd-law.png",
-            "link": "https://www.sdlaw.co.za",
-        },
+        }
     ];
 
-    let projects = document.getElementsByClassName("project");
-    let projectModal = document.getElementById("project-modal");
-    let closeModal = document.getElementById("close");
-    let hireMeButton = document.getElementById("hireMe");
+    const projects = document.getElementsByClassName("project");
+    const projectModal = document.getElementById("project-modal");
+    const closeModal = document.getElementById("close");
+    const hireMeButton = document.getElementById("hireMe");
 
     //Click event to launch modal
     for(var i = 0; i < projects.length; i++) {

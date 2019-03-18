@@ -75,6 +75,23 @@ a:not(.btn){
     &.btn-success{
         color:$grey;
     }
+    &:hover{
+        &.btn-success{
+            color:$white;
+        }
+        svg{
+            fill:$white;
+        }
+    }
+}
+
+.badge{
+    font-size:1rem;
+    line-height: inherit;
+    margin-bottom: .5rem;
+    &.badge-warning{
+        color:$white;
+    }
 }
 
 .bg-grey{
@@ -140,6 +157,9 @@ a:not(.btn){
         font-size: 4rem;
         line-height:2rem;
         cursor:pointer
+    }
+    .modal-content{
+        background-color:#f5f5f5;
     }
 }
 

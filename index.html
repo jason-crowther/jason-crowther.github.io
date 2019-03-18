@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Front-end Developer | Jason Crowther</title>
     <meta name="description" content="Front-end developer, web &amp; graphic designer currently based in the Netherlands. Hire Me >>">
@@ -39,6 +39,7 @@
     </header>
     <main class="animated fadeIn delay-1s">
         <article>
+            <h2 class="sr-only">Portfolio of Jason Crowther, Front-end Developer</h2>
             <section class="bg-grey text-light py-5">
                 <div class="container">
                     <div class="row">
@@ -55,45 +56,46 @@
                             <h2>Tools of the trade</h2>
                             <h4>Front-end</h4>
                             <ul class="list-inline">
-                                <li class="list-inline-item">HTML</li>
-                                <li class="list-inline-item">CSS</li>
-                                <li class="list-inline-item">Less</li>
-                                <li class="list-inline-item">SASS</li>
-                                <li class="list-inline-item">Javascript</li>
-                                <li class="list-inline-item">jQuery</li>
-                                <li class="list-inline-item">Bootstrap</li>
+                                <li class="list-inline-item badge badge-primary">HTML</li>
+                                <li class="list-inline-item badge badge-primary">CSS</li>
+                                <li class="list-inline-item badge badge-primary">Less</li>
+                                <li class="list-inline-item badge badge-primary">SASS</li>
+                                <li class="list-inline-item badge badge-primary">Javascript</li>
+                                <li class="list-inline-item badge badge-primary">jQuery</li>
+                                <li class="list-inline-item badge badge-primary">Bootstrap</li>
                             </ul>
 
                             <h4>Back-end &amp; Databases</h4>
                             <ul class="list-inline">
-                                <li class="list-inline-item">Laravel</li>
-                                <li class="list-inline-item">Wordpress</li>
-                                <li class="list-inline-item">Php</li>
-                                <li class="list-inline-item">MySQL</li>
-                                <li class="list-inline-item">Apache</li>
+                                <li class="list-inline-item badge badge-danger">Laravel</li>
+                                <li class="list-inline-item badge badge-danger">Wordpress</li>
+                                <li class="list-inline-item badge badge-danger">Php</li>
+                                <li class="list-inline-item badge badge-danger">MySQL</li>
+                                <li class="list-inline-item badge badge-danger">Apache</li>
                             </ul>
 
                             <h4>Other Things</h4>
                             <ul class="list-inline">
-                                <li class="list-inline-item">Git</li>
-                                <li class="list-inline-item">Mercurial</li>
-                                <li class="list-inline-item">Github</li>
-                                <li class="list-inline-item">Bitbucket</li>
-                                <li class="list-inline-item">NPM</li>
-                                <li class="list-inline-item">Composer</li>
-                                <li class="list-inline-item">Nodejs</li>
-                                <li class="list-inline-item">Webpack</li>
-                                <li class="list-inline-item">Babel</li>
+                                <li class="list-inline-item badge badge-warning">Git</li>
+                                <li class="list-inline-item badge badge-warning">Mercurial</li>
+                                <li class="list-inline-item badge badge-warning">Github</li>
+                                <li class="list-inline-item badge badge-warning">Bitbucket</li>
+                                <li class="list-inline-item badge badge-warning">NPM</li>
+                                <li class="list-inline-item badge badge-warning">Composer</li>
+                                <li class="list-inline-item badge badge-warning">Nodejs</li>
+                                <li class="list-inline-item badge badge-warning">Webpack</li>
+                                <li class="list-inline-item badge badge-warning">Babel</li>
+                                <li class="list-inline-item badge badge-warning">Photoshop</li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </section>
             <section class="bg-light py-5">
-                <div class="px-2 px-md-5">
+                <div class="container-fluid px-2 px-md-5">
                     <div class="row no-gutters">
                         <div class="col-12 text-center">
-                            <h2>My Work</h2>
+                            <h2 class="mb-3">Some Of My Work</h2>
                         </div>
                     </div>
                     <div class="row no-gutters">
@@ -161,13 +163,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-6 col-md-3">
-                            <div class="project" data-project="project_09">
-                                <img src="./assets/images/portfolio/sd-law.png" alt="SD Law" class="img-fluid">
-                                <div class="project-content">
-                                    <h4>SD Law</h4>
-                                </div>
-                            </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 text-center mt-3">
+                            <a href="https://www.jcmultimedia.co.za/" target="_blank" rel="noopener" class="btn btn-success">View More Work<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm2 12l-4.5 4.5 1.527 1.5 5.973-6-5.973-6-1.527 1.5 4.5 4.5z"/></svg></a>
                         </div>
                     </div>
                 </div>
@@ -176,13 +177,13 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-12 col-md-10 offset-md-1 text-center">
-                            <h2>Contact Me</h2>
+                            <h2 class="mb-3">Contact Me</h2>
 
                             <div id="formError" class="text-light rounded bg-danger p-2 d-none">
                                 <p class="mb-0"></p>
                             </div>
 
-                            <form action="https://formspree.io/jasonpcrowther@gmail.com" method="post" class="mt-3" id="contactForm">
+                            <form action="#" method="post" class="mt-3" id="contactForm">
                                 <div class="row">
                                     <div class="col-12 col-md-6">
                                         <div class="form-group">
@@ -220,7 +221,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
-                    <p class="m-0 text-white">Copyright &copy; 2019 | Designed &amp; Developed by Jason Crowther</p>
+                    <p class="m-0 text-white">Copyright &copy; 2019 | Designed &amp; Developed by Jason Crowther | <a href="https://github.com/jason-crowther/jason-crowther.github.io" target="_blank" rel="noopener">View Source</a></p>
                 </div>
             </div>
         </div>
@@ -232,14 +233,16 @@
                     <div id="close">&times;</div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-12 col-md-8">
-                    <img src="#" alt="Project Image" class="modal-img img-fluid mb-3 mb-md-0">
-                </div>
-                <div class="col-12 col-md-4">
-                    <h3 class="modal-title"></h3>
-                    <p class="modal-description"></p>
-                    <a href="#" target="_blank" rel="noopener" class="modal-link btn btn-success">View Live<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm2 12l-4.5 4.5 1.527 1.5 5.973-6-5.973-6-1.527 1.5 4.5 4.5z"/></svg></a>
+            <div class="modal-content p-3 rounded">
+                <div class="row">
+                    <div class="col-12 col-md-8">
+                        <img src="#" alt="Project Image" class="modal-img img-fluid mb-3 mb-md-0">
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <h3 class="modal-title">#</h3>
+                        <p class="modal-description">#</p>
+                        <a href="#" target="_blank" rel="noopener" class="modal-link btn btn-success">View Live<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm2 12l-4.5 4.5 1.527 1.5 5.973-6-5.973-6-1.527 1.5 4.5 4.5z"/></svg></a>
+                    </div>
                 </div>
             </div>
         </div>
