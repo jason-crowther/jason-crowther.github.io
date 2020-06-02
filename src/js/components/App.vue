@@ -2,15 +2,27 @@
     <div>
         <app-header></app-header>
         <app-about></app-about>
+        <app-projects></app-projects>
+        <app-contact></app-contact>
+        <app-footer></app-footer>
     </div>
 </template>
 
 <script>
     import AppHeader from './AppHeader.vue';
     import AppAbout from './AppAbout.vue';
+    import AppProjects from './AppProjects.vue';
+    import AppContact from './AppContact.vue';
+    import AppFooter from './AppFooter.vue';
     export default {
         name: "app",
-        components: {AppHeader, AppAbout},
+        components: {
+            AppHeader,
+            AppAbout,
+            AppProjects,
+            AppContact,
+            AppFooter
+        },
     }
 </script>
 
