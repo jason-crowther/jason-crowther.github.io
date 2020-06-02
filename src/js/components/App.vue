@@ -1,33 +1,31 @@
 <template>
-    <div id="app">
+    <div>
         <app-header></app-header>
-
+        <app-about></app-about>
     </div>
 </template>
 
 <script>
     import AppHeader from './AppHeader.vue';
+    import AppAbout from './AppAbout.vue';
     export default {
         name: "app",
-        components: {AppHeader},
+        components: {AppHeader, AppAbout},
     }
 </script>
 
 <style>
-    @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800i&display=swap');
-    body{
-        background-color: #4c5a66;
-        margin: 0;
-        font-family: 'Open Sans', sans-serif;
-        font-weight: 400;
-        font-size:16px;
-    }
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,700&display=swap');
+    @import "./../../scss/variables";
+    @import "./../../scss/base";
+
     .container{
         display:grid;
-        grid-template-columns: repeat(8, 1fr);
+        grid-template-columns: repeat(12, 1fr);
+        grid-column-gap: 1rem;
     }
     .content{
-        grid-column: 3/7;
+        grid-column: 4/8;
     }
     .text-center{
         text-align: center;

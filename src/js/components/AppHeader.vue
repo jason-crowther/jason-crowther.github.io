@@ -1,0 +1,78 @@
+<template>
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <a href="/" >
+                    <img src="/dist/images/jc-logo.svg" alt="Jason Crowther Front-end Developer" class="header__logo">
+                </a>
+                <h1 class="header__title">
+                    <span class="header__title--one">Jason Crowther</span>
+                    <span class="header__title--two">Front-end Developer</span>
+                    <span class="header__title--three">and all-round creative.</span>
+                </h1>
+            </div>
+        </div>
+    </header>
+</template>
+
+<script>
+    export default {
+        name: "AppHeader"
+    }
+</script>
+
+<style lang="scss" scoped>
+    @import "./../../scss/variables";
+    .header{
+        background-image: url("./../../../dist/images/main-bg.jpg");
+        background-image: -moz-linear-gradient(top, rgba(54,64,73,0.6) 30%, rgba(76,90,102,1) 100%), url("./../../../dist/images/main-bg.jpg");
+        background-image: -webkit-linear-gradient(top, rgba(54,64,73,0.6) 30%,rgba(76,90,102,1) 100%), url("./../../../dist/images/main-bg.jpg");
+        background-image: linear-gradient(to bottom, rgba(54,64,73,0.6) 30%,rgba(76,90,102,1) 100%), url("./../../../dist/images/main-bg.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        color :$white;
+        min-height: 40rem;
+        text-align: center;
+        padding: 3rem 0;
+
+        &__content{
+            grid-column: 4/10;
+        }
+
+        &__logo{
+            width: 17.5rem;
+            height: 17.5rem;
+        }
+
+        &__title{
+            span{
+                display: block;
+            }
+
+            &--one{
+                font-weight: 300;
+                color: $green;
+                font-size: 2.4rem;
+                line-height: 1;
+            }
+
+            &--two{
+                font-weight: 700;
+                font-style: italic;
+                color: $white;
+                font-size: 6.4rem;
+                line-height: 1.3;
+            }
+
+            &--three{
+                font-weight: 600;
+                color: $green;
+                font-size: 3.6rem;
+                line-height: 1.3;
+            }
+
+        }
+
+    }
+</style>

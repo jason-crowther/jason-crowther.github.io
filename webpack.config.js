@@ -1,25 +1,16 @@
 const path = require('path');
-const webpack = require('webpack');
-const VueLoaderPlugin = require('vue-loader/lib/plugin');
+const { VueLoaderPlugin } = require('vue-loader');
 
 module.exports = {
-  mode: 'production',
-  entry: './resources/js/index.js',
+  entry: './src/js/index.js',
   output: {
-    path: path.resolve(__dirname, 'assets/js'),
-    filename: 'main.js'
+    path: path.resolve(__dirname, './dist/'),
+    filename: 'js/app.js'
   },
   module:{
     rules:[
       {
-        test: /\.css$/,
-        use: [
-          'vue-style-loader',
-          'css-loader'
-        ],
-      },
-      {
-        test: /\.scss$/,
+        test: /\.(css|sass|scss)$/,
         use: [
           'vue-style-loader',
           'css-loader',
@@ -27,34 +18,13 @@ module.exports = {
         ],
       },
       {
-        test: /\.sass$/,
-        use: [
-          'vue-style-loader',
-          'css-loader',
-          'sass-loader?indentedSyntax'
-        ],
-      },
-      {
         test: /\.vue$/,
         loader: 'vue-loader',
-        options: {
-          loaders: {
-            'scss': [
-              'vue-style-loader',
-              'css-loader',
-              'sass-loader'
-            ],
-            'sass': [
-              'vue-style-loader',
-              'css-loader',
-              'sass-loader?indentedSyntax'
-            ]
-          }
-        }
+
       },
       {
         test: /\.js$/,
-        exclude: /node_modules/,
+        exclude: /[\\/]node_modules[\\/]/,
         loader: 'babel-loader',
         query: {
             presets: ['@babel/preset-env']
@@ -62,10 +32,14 @@ module.exports = {
       },
       {
         test: /\.(png|jpg|gif|svg)$/,
-        loader: 'file-loader',
-        options: {
-          name: 'assets/images/[name].[ext]?[hash]'
-        }
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[path][name].[ext]'
+            }
+          }
+        ]
       }
     ]
   },
@@ -76,7 +50,6 @@ module.exports = {
     extensions: ['*', '.js', '.vue', '.json']
   },
   plugins: [
-    // make sure to include the plugin for the magic
     new VueLoaderPlugin()
   ]
 };
