@@ -1,0 +1,79 @@
+<template>
+        <div class="modal" :class="{ 'modal__active': modalShown }">
+            <button type="button" @click="closeModal">&times</button>
+                <div class="modal__wrapper" v-if="project !== null">
+
+                    <div class="modal__image">
+                        <img :src="project.image" :alt="project.title" class="modal-img img-fluid mb-3 mb-md-0">
+                    </div>
+
+                        <div class="modal__content">
+                            <h3 class="modal-title">{{ project.title }}</h3>
+                            <p class="modal-description">{{ project.description }}</p>
+                            <a :href="project.link" target="_blank" rel="noopener" class="modal-link btn btn-success">View Live<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm2 12l-4.5 4.5 1.527 1.5 5.973-6-5.973-6-1.527 1.5 4.5 4.5z"/></svg></a>
+                        </div>
+
+                </div>
+        </div>
+</template>
+
+<script>
+    export default {
+        name: "AppModal",
+        data(){
+            return {
+                modalShown: false,
+                project: null
+            }
+        },
+        methods: {
+            showModal(){
+                this.modalShown = true;
+            },
+            closeModal(){
+                this.modalShown = false;
+            }
+        },
+        created() {
+            Event.$on('showModal', (project) => {
+                this.project = project;
+                this.showModal();
+            });
+        }
+    }
+</script>
+
+<style lang="scss" scoped>
+.modal{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background-color:#fff;
+    overflow: auto;
+    display:none;
+
+    &__active{
+        display:block;
+    }
+
+    &__wrapper{
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-gap: 1rem;
+        background-color:#f5f5f5;
+    }
+
+    &__image{
+        grid-column-start: 2;
+        grid-column-end: 6;
+    }
+
+    &__content{
+        grid-column-start: 6;
+        grid-column-end: 11;
+    }
+}
+</style>

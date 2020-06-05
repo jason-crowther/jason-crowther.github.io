@@ -5,6 +5,7 @@
         <app-projects></app-projects>
         <app-contact></app-contact>
         <app-footer></app-footer>
+        <app-modal></app-modal>
     </div>
 </template>
 
@@ -14,6 +15,7 @@
     import AppProjects from './AppProjects.vue';
     import AppContact from './AppContact.vue';
     import AppFooter from './AppFooter.vue';
+    import AppModal from './AppModal.vue';
     export default {
         name: "app",
         components: {
@@ -21,8 +23,9 @@
             AppAbout,
             AppProjects,
             AppContact,
-            AppFooter
-        },
+            AppFooter,
+            AppModal
+        }
     }
 </script>
 
