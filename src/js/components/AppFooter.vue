@@ -2,7 +2,7 @@
     <footer class="footer">
         <div class="container">
             <div class="footer__content">
-                <p class="m-0 text-white">Copyright &copy; 2019 | Designed &amp; Developed by Jason Crowther | <a href="https://github.com/jason-crowther/jason-crowther.github.io" target="_blank" rel="noopener">View Source</a></p>
+                <p class="m-0 text-white">Copyright &copy; {{ date }} | Designed &amp; Developed by Jason Crowther | <a href="https://github.com/jason-crowther/jason-crowther.github.io" target="_blank" rel="noopener">View Source</a></p>
             </div>
         </div>
     </footer>
@@ -10,7 +10,12 @@
 
 <script>
     export default {
-        name: "AppFooter"
+        name: "AppFooter",
+        data(){
+            return {
+                date: new Date().getFullYear()
+            }
+        }
     }
 </script>
 

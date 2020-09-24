@@ -4,7 +4,7 @@
             <h2>Some of my work</h2>
         </div>
         <div class="projects__wrapper">
-            <div class="project" v-for="project in projects" @click.prevent="launchModal(project)">
+            <div class="project" v-for="project in projects" :key="project" @click.prevent="launchModal(project)">
                 <img :src="project.image" :alt="project.title">
                 <div class="project__title">
                     <h4>{{ project.title }}</h4>
@@ -62,5 +62,29 @@
 
     .project{
         cursor: pointer;
+        position: relative;
+
+        &:hover{
+            .project__title{
+                background-color: rgba($black, 0);
+            }
+        }
+
+        &__title{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba($black, 0.3);
+            color: $white;
+            text-align: center;
+            h4{
+                position: relative;
+                top: 50%;
+                transform: translateY(-50%);
+                font-weight: 600;
+            }
+        }
     }
 </style>

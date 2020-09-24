@@ -1,6 +1,6 @@
 <template>
         <div class="modal" :class="{ 'modal__active': modalShown }">
-            <button type="button" @click="closeModal">&times</button>
+            <button type="button" class="modal__close" @click="closeModal">&times</button>
                 <div class="modal__wrapper" v-if="project !== null">
 
                     <div class="modal__image">
@@ -59,21 +59,34 @@
         display:block;
     }
 
+    &__close{
+        font-size: 5rem;
+        border: 0;
+        outline: 0;
+        background-color: transparent;
+        position: absolute;
+        top: .5rem;
+        right: .5rem;
+        cursor: pointer;
+        padding: .5rem 1.5rem;
+    }
+
     &__wrapper{
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         grid-gap: 1rem;
         background-color:#f5f5f5;
+        margin: 8rem 6rem;
     }
 
     &__image{
-        grid-column-start: 2;
-        grid-column-end: 6;
+        grid-column-start: 1;
+        grid-column-end: 9;
     }
 
     &__content{
-        grid-column-start: 6;
-        grid-column-end: 11;
+        grid-column-start: 9;
+        grid-column-end: 13;
     }
 }
 </style>

@@ -3,7 +3,7 @@
         <div class="container">
             <div class="header__content">
                 <a href="/" >
-                    <img src="/dist/images/jc-logo.svg" alt="Jason Crowther Front-end Developer" class="header__logo">
+                    <img src="./../../../dist/images/jc-logo.svg" alt="Jason Crowther Front-end Developer" class="header__logo">
                 </a>
                 <h1 class="header__title">
                     <span class="header__title--one">Jason Crowther</span>
