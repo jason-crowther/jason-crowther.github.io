@@ -4,7 +4,7 @@
             <h2>Some of my work</h2>
         </div>
         <div class="projects__wrapper">
-            <div class="project" v-for="project in projects" :key="project" @click.prevent="launchModal(project)">
+            <div class="project" v-for="project in projects" :project="project" @click.prevent="launchModal(project)">
                 <img :src="project.image" :alt="project.title">
                 <div class="project__title">
                     <h4>{{ project.title }}</h4>

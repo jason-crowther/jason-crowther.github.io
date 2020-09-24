@@ -3,7 +3,7 @@
         <div class="container">
             <div class="header__content">
                 <a href="/" >
-                    <img src="./../../../dist/images/jc-logo.svg" alt="Jason Crowther Front-end Developer" class="header__logo">
+                    <img src="/../../../dist/images/jc-logo.svg" alt="Jason Crowther Front-end Developer" class="header__logo">
                 </a>
                 <h1 class="header__title">
                     <span class="header__title--one">Jason Crowther</span>
@@ -24,10 +24,10 @@
 <style lang="scss" scoped>
     @import "./../../scss/variables";
     .header{
-        background-image: url("./../../../dist/images/main-bg.jpg");
-        background-image: -moz-linear-gradient(top, rgba(54,64,73,0.6) 30%, rgba(76,90,102,1) 100%), url("./../../../dist/images/main-bg.jpg");
-        background-image: -webkit-linear-gradient(top, rgba(54,64,73,0.6) 30%,rgba(76,90,102,1) 100%), url("./../../../dist/images/main-bg.jpg");
-        background-image: linear-gradient(to bottom, rgba(54,64,73,0.6) 30%,rgba(76,90,102,1) 100%), url("./../../../dist/images/main-bg.jpg");
+        background-image: url("/../../../dist/images/main-bg.jpg");
+        background-image: -moz-linear-gradient(top, rgba(54,64,73,0.6) 30%, rgba(76,90,102,1) 100%), url("/../../../dist/images/main-bg.jpg");
+        background-image: -webkit-linear-gradient(top, rgba(54,64,73,0.6) 30%,rgba(76,90,102,1) 100%), url("/../../../dist/images/main-bg.jpg");
+        background-image: linear-gradient(to bottom, rgba(54,64,73,0.6) 30%,rgba(76,90,102,1) 100%), url("/../../../dist/images/main-bg.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center bottom;
