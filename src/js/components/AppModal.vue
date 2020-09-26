@@ -108,15 +108,17 @@
 		}
 	}
 
-	@media(min-width: 992px){
-		&__image {
-			grid-column-start: 1;
-			grid-column-end: 9;
-		}
+	@media (min-width: 992px) {
+		.modal {
+			&__image {
+				grid-column-start: 1;
+				grid-column-end: 9;
+			}
 
-		&__content {
-			grid-column-start: 9;
-			grid-column-end: 13;
+			&__content {
+				grid-column-start: 9;
+				grid-column-end: 13;
+			}
 		}
 	}
 </style>
