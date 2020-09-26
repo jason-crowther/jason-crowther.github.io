@@ -1,14 +1,30 @@
 <template>
-    <button :type="type" :class="classes">{{text}} <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm2 12l-4.5 4.5 1.527 1.5 5.973-6-5.973-6-1.527 1.5 4.5 4.5z"/></svg></button>
+	<button :type="type" :class="classes">
+		<slot>Button</slot>
+	</button>
 </template>
 
 <script>
-    export default {
-        name: "AppButton",
-        props: ["type", "text", "classes"]
-    }
+	export default {
+		name: "AppButton",
+		props: ["type", "classes"],
+	};
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+	@import "./../../scss/variables";
 
+	.btn {
+		padding: 0.6rem 1.2rem;
+		font-family: inherit;
+		border: 0;
+		border-radius: 0.4rem;
+		font-size: 1.6rem;
+		cursor: pointer;
+
+		&--green {
+			background-color: $green;
+			color: $white;
+		}
+	}
 </style>

@@ -1,13 +1,13 @@
-import Vue from 'vue';
-import App from './components/App.vue';
+import Vue from "vue";
+import App from "./components/App.vue";
 
 /* Event Bus*/
 window.Event = new Vue();
 
 new Vue({
-    el: '#app',
-    components: { App },
-    template: '<App/>'
+	el: "#app",
+	components: {App},
+	template: "<App/>",
 });
 
 /*
