@@ -4,6 +4,7 @@ const {VueLoaderPlugin} = require("vue-loader");
 module.exports = {
 	entry: "./src/js/index.js",
 	output: {
+		publicPath: "/",
 		path: path.resolve(__dirname, "./dist/"),
 		filename: "js/app.js",
 	},
@@ -29,6 +30,7 @@ module.exports = {
 						loader: "file-loader",
 						options: {
 							name: "[path][name].[ext]",
+							emitFile: false,
 						},
 					},
 				],

@@ -19,8 +19,8 @@
 					:href="project.link"
 					target="_blank"
 					rel="noopener"
-					class="modal-link btn btn-success"
-					>View Live<svg
+					class="modal__link"
+					>View Live <svg
 						xmlns="http://www.w3.org/2000/svg"
 						width="18"
 						height="18"
@@ -62,6 +62,7 @@
 </script>
 
 <style lang="scss" scoped>
+	@import "./../../scss/variables";
 	.modal {
 		position: fixed;
 		width: 100%;
@@ -105,6 +106,20 @@
 		&__content {
 			grid-column-start: 1;
 			grid-column-end: 13;
+			padding: 1rem;
+		}
+
+		&__link{
+			color: $black;
+			text-decoration: none;
+
+			&:hover{
+				text-decoration: underline;
+			}
+
+			svg{
+				vertical-align: middle;
+			}
 		}
 	}
 

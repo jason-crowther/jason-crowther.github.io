@@ -26,5 +26,9 @@
 			background-color: $green;
 			color: $white;
 		}
+
+		svg{
+			vertical-align: middle;
+		}
 	}
 </style>
