@@ -12,7 +12,7 @@
 </script>
 
 <style scoped lang="scss">
-	@import "./../../scss/variables";
+	@import "./../../../scss/variables";
 
 	.btn {
 		padding: 0.6rem 1.2rem;
@@ -27,7 +27,7 @@
 			color: $white;
 		}
 
-		svg{
+		svg {
 			vertical-align: middle;
 		}
 	}

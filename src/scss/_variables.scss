@@ -1,16 +1,16 @@
 // Colors
 $white: #ffffff;
 $black: #000000;
-$green:#a8e637;
-$grey:#4c5a66;
-$darkGrey:darken($grey, 10%);
-$darkGreen:darken($green, 10%);
+$green: #a8e637;
+$grey: #4c5a66;
+$darkGrey: darken($grey, 10%);
+$darkGreen: darken($green, 10%);
 
 // Body
-$body-bg: $grey;
+$body-bg: $black;
 
 // Typography
-$font-family-sans-serif: 'Open Sans', Arial , sans-serif;
+$font-family-sans-serif: 'Open Sans', Arial, sans-serif;
 $font-size-base: 1.6rem;
 $line-height-base: 1.7;
 $font-weight-base: 400;

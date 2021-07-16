@@ -1,4 +1,6 @@
 const path = require("path");
+const webpack = require('webpack');
+const sass = require('sass');
 const {VueLoaderPlugin} = require("vue-loader");
 
 module.exports = {
@@ -21,16 +23,29 @@ module.exports = {
 			{
 				test: /\.js$/,
 				exclude: /[\\/]node_modules[\\/]/,
-				loader: ["babel-loader", "eslint-loader"],
+				loader: "babel-loader",
 			},
 			{
-				test: /\.(png|jpg|gif|svg)$/,
+				test: /\.(png|jpe?g|gif)$/,
 				use: [
 					{
 						loader: "file-loader",
 						options: {
 							name: "[path][name].[ext]",
 							emitFile: false,
+							esModule: false,
+						},
+					},
+				],
+			},
+			{
+				test: /\.svg$/,
+				use: [
+					{
+						loader: "html-loader",
+						options: {
+							minimize: true,
+							esModule: false,
 						},
 					},
 				],
