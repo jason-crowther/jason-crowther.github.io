@@ -1,9 +1,6 @@
 import { createApp } from 'vue'
 import App from '@/js/components/App.vue'
 
-/* Event Bus*/
-//window.Event = new createApp();
-
 createApp(App).mount('#app')
 
 /*
