@@ -1,10 +1,11 @@
+@use 'sass:color';
 // Colors
 $white: #ffffff;
 $black: #000000;
 $green: #a8e637;
 $grey: #4c5a66;
-$darkGrey: darken($grey, 10%);
-$darkGreen: darken($green, 10%);
+$darkGrey: color.adjust($grey, $lightness: -10%);
+$darkGreen: color.adjust($green, $lightness: -10%);
 
 // Body
 $body-bg: $black;
@@ -14,5 +15,3 @@ $font-family-sans-serif: 'Open Sans', Arial, sans-serif;
 $font-size-base: 1.6rem;
 $line-height-base: 1.7;
 $font-weight-base: 400;
-
-

@@ -1,14 +1,10 @@
-import Vue from "vue";
-import App from "./components/App.vue";
+import { createApp } from 'vue'
+import App from '@/js/components/App.vue'
 
 /* Event Bus*/
-window.Event = new Vue();
+//window.Event = new createApp();
 
-new Vue({
-	el: "#app",
-	components: {App},
-	template: "<App/>",
-});
+createApp(App).mount('#app')
 
 /*
 if ('serviceWorker' in navigator) {
